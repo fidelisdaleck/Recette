@@ -1,0 +1,310 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    background-color: aqua;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+
+.logo{
+    position: absolute;
+    top:30px;
+    left: 50px;
+}
+
+li{
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+
+}
+.navbar{
+    position: absolute;
+    top:20px;
+    right: 50px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(251, 122, 30);
+}
+.background{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3)), url(TP_cake/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    padding-top: 70px;
+}
+.background p{
+    font-size: 1.8em;
+}
+.banner1{
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.banner2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(243, 84, 5);
+}
+.background .clic{
+    border: transparent 1px;
+    border-radius: 25px;
+    background-color: rgb(73, 171, 245);
+    color: rgb(6, 6, 15);
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.background .clic:hover{
+    border: rgb(3, 5, 8) 1px solid;
+    border-radius: 25px;
+    background-color: transparent;
+    color: rgb(251, 122, 30);
+    padding: 10px;
+    margin-top: 50px;
+    transition: 0.2;
+}
+.about-us{
+    margin: 200px 100px 50px 100px;
+    text-align: justify;
+}
+.color{
+    color: blue;
+}
+footer{
+    background-color: gray;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+.product{
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 20px;
+    text-align: center;
+    padding-left: 200px;
+    padding-top: 50px;
+    background-color: rgb(189, 237, 245);
+}
+#nos-douceurs h1{
+    font-size: 30px
+}
+.product p{
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product button{
+    padding: 5px 20px 5px 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+}
+.product button:hover{
+    color: black;
+    background-color: rgb(240, 141, 69);
+    transition: 0.3;
+}
+h1{
+    font-size: 20px;
+    color: rgb(24, 117, 183);
+    padding: 100px 0px 50px 0px;
+    text-align: center;
+    background-color: rgb(189, 237, 245);
+    padding-top: 20px;
+    margin-top: 50px;
+}
+.form{
+    background-color: rgb(180, 194, 254);
+    padding: 100px 0px 100px 20px;
+}
+.formulaire{
+    border: rgb(233, 231, 231) 1px solid;
+    width: 600px;
+    height: 300px;
+    padding: 50px 0px 50px 50px;
+    background:transparent;
+    background-position: center;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+}
+.nav .message h2{
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(0, 119, 255);
+}
+.nav .message p{
+    text-align: center;
+    margin-bottom: 25px;
+    padding-right: 20px;
+}
+
+.label{
+    display: inline-block;
+    padding: 10px 0px 20px 0px;
+}
+.space{
+    border: gray solid 2px;
+    border-radius: 5px;
+    background-color: transparent;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 400px;
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+.margin-bottom input{
+    height: 25px;
+    border-radius: 10px;
+}
+.nav{
+    margin-top: 50px;
+}
+
+.call-us{
+    text-align: center;
+    color: chocolate;
+    font-size: 15px;
+}
+.menu-hamburger{
+    display:none;
+    width: 40px;
+    cursor: pointer;
+}
+  /*--burger-menu--*/
+.burger-menu{
+    display: none;
+    height: 0;
+    position: absolute;
+    top: 70px;
+    width: 200px;
+    right: 50px;
+    background-color: rgba(0, 0, 0, 0.575);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0,2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.burger-menu.open{
+    height: 220px;
+}
+.burger-menu li{
+    padding: 0.7rem;
+}
+@media (max-width :900px) {
+    #inline{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        text-align: center;
+    }
+    header{
+        background-color: aqua;
+        height: 70px;
+        text-align: center;
+    }
+    .background{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url(TP_cake/background3.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        font-size: 12px;
+    }
+    .product{
+        padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: repeat(5, 300px);
+        gap: 20px;
+        text-align: center;
+        padding-left: 30px;
+        padding-top: 50px;
+        background-color: rgb(189, 237, 245);
+    }
+    h1{
+        font-size: 20px;
+        color: rgb(24, 117, 183);
+        padding-left: 10px;
+        margin: 100px 0px 0px 0px;
+        background-color: rgb(189, 237, 245);
+        padding-top: 20px;
+    }
+    .formulaire{
+        height: 380px;
+        width: 220px;
+        padding-right: 10px;
+    }
+    .formulaire input{
+        width: 150px;
+    }
+    .space{
+        width: 220px;
+    }
+    .submit button{
+        padding: 5px 10px 5px 10px;
+        color: white;
+        border-radius: 30px;
+        background-color: black;
+    }
+    .submit button:hover{
+        color: black;
+        background-color: rgb(69, 103, 240);
+        transition: 0.3;
+    }
+    .call-us{
+        color: chocolate;
+        font-size: 15px;
+    }
+}
+@media (width :768px){
+    .product{
+        padding-left: 200px;
+    }
+}
+@media (min-width :900px) {
+    .background {
+        font-size: 1.5em;
+        height: 80vh;
+    }
+    .background .clic{
+        font-size: 30px;
+    }
+}
+@media (max-width :767px){
+    .nav-links{
+        display: none;
+    }
+    .menu-hamburger{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .burger-menu .inline{
+        display: flex;
+        flex-direction: column;
+    }
+    .burger-menu .inline a{
+        color: white;
+    }
+    .burger-menu .inline a:hover{
+    color: rgb(30, 225, 251);
+    }
+    .burger-menu{
+        display: block;
+    }
+}
